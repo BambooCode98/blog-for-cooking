@@ -1,0 +1,51 @@
+.navbar{
+  /* border: 1px red solid; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+  .maintitle{
+    /* border: 1px red dashed; */
+    padding-left: 1%;
+    color: pink;
+    width: 50%;
+    /* font-size: 1em; */
+
+  }
+
+  .links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+  }
+
+  .link{
+    padding: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    border-left: 1px white solid;
+    /* font-size: 100%; */
+  }
+
+  .link, .last{
+    border-right: 1px white solid;
+  }
+
+  ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+  }
+  
+  li{
+    list-style-type: none;
+    display: block;  
+  }
+
+  .link:hover{
+    color: pink;
+  }

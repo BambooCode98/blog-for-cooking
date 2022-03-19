@@ -1,0 +1,64 @@
+.bodyStuff{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.navStuff{
+  display: flex;
+  height: 10%;
+  background: #000000;
+  border-bottom: 10px lightblue groove;
+}
+
+.everythingElse{
+  display: flex;
+  width: 100%;
+  height: 90%;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.left, .middle, .right{
+  padding: 0.5%;
+  width: 100%;
+}
+
+.left, .right{
+  width: 15%;
+  background-color: #ffb6c1;
+  border-radius: 4px;
+  z-index: -1;
+}
+
+.left{
+  border-right: 1px solid black;
+}
+
+.right{
+  border-left: 1px solid black;
+}
+
+.middle{
+  width: 70%;
+
+}
+
+
+.footer{
+  /* background-color: #ffb6c1; */
+  border-top: 10px lightblue ridge;
+  background: #a33494;
+  text-align: center;
+  /* height: 5%; */
+  color: white;
+}

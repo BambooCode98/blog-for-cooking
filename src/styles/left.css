@@ -1,0 +1,13 @@
+.leftContent{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.blogAuthor{
+  border: 1px black solid;
+  border-radius: 20px;
+  width: 10%;
+  height: 5%;
+}

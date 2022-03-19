@@ -1,21 +1,37 @@
-import './App.css';
-
 import React, { useState } from 'react';
+import './styles/App.css';
+import Navbar from './components/navbar';
+import MiddleArticles from './components/middle';
+import RightContent from './components/right';
+import LeftAuthor from './components/left';
+import Footer from './components/footer';
 
-export default function Example() {
-  const [count, setCount] = useState(5);
-  const [inputs, setInput] = useState("filled");
+export default function App() {
+
 
   return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
-      <br />
-      <br />
-      <br />
-      <input type="text" placeholder={() => setCount(count)} />
+    <div className='bodyStuff'>
+      <div className="navStuff">
+        <Navbar />
+      </div>
+      <div className='everythingElse'>
+        <div className='content'>
+          <div className='left'>
+            <LeftAuthor />
+          </div>
+          <div className='middle'>
+            <MiddleArticles />
+
+          </div>
+          <div className='right'>
+            <RightContent />
+
+          </div>
+        </div>
+        <div className='footer'>
+          <Footer />
+        </div>
+      </div>
     </div>
   );
 }
