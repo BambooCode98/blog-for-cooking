@@ -1,24 +1,26 @@
 .bodyStuff{
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 
 .navStuff{
   display: flex;
-  height: 10%;
+  height: 5%;
   background: #000000;
   border-bottom: 10px lightblue groove;
+  padding-left: 1%;
 }
 
 .everythingElse{
   display: flex;
   width: 100%;
-  height: 90%;
+  height: 95%;
   justify-content: space-between;
   align-items: stretch;
   flex-direction: column;
+  position: relative;
 }
 
 .content{
@@ -30,35 +32,43 @@
 
 .left, .middle, .right{
   padding: 0.5%;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .left, .right{
-  width: 15%;
+  width: 10%;
   background-color: #ffb6c1;
   border-radius: 4px;
-  z-index: -1;
+  z-index: -5;
 }
 
 .left{
-  border-right: 1px solid black;
+  /* background-color: white; */
+  /* border-right: 1px solid black; */
+  width: 20%;
 }
 
 .right{
-  border-left: 1px solid black;
+  /* border-left: 1px solid black; */
+  width: 20%;
+
 }
 
 .middle{
-  width: 70%;
-
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
 }
 
 
 .footer{
-  /* background-color: #ffb6c1; */
+  background-color: #ffb6c1;
   border-top: 10px lightblue ridge;
   background: #a33494;
   text-align: center;
-  /* height: 5%; */
+  height: 5%;
   color: white;
+  /* position: absolute;
+  bottom: 0; */
 }

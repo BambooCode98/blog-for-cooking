@@ -1,18 +1,23 @@
 .navbar{
-  /* border: 1px red solid; */
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
   .maintitle{
-    /* border: 1px red dashed; */
-    padding-left: 1%;
     color: pink;
     width: 50%;
-    /* font-size: 1em; */
-
+    margin: 0;
+    /* margin-left: 1%; */
   }
+
+    .title{
+      font-size: 3vw;
+    }
+
+    .subTitle{
+      font-size: 1.5vw;
+    }
 
   .links{
     display: flex;
@@ -23,22 +28,32 @@
 
   .link{
     padding: 5px;
-    font-size: 1rem;
+    /* margin: 25%; */
+    font-size: 2.5vw;
     text-decoration: none;
     color: white;
-    border-left: 1px white solid;
-    /* font-size: 100%; */
+  }
+
+  .l1{
+
+  }
+
+  .l2{
+
+  }
+
+  .l3{
+
   }
 
   .link, .last{
-    border-right: 1px white solid;
+
   }
 
   ul{
     margin: 0;
     padding: 0;
     display: flex;
-
   }
   
   li{
