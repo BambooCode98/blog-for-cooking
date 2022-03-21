@@ -7,7 +7,7 @@
 
 .blogAuthor{
   border: 1px black solid;
-  border-radius: 20px;
-  width: 10%;
-  height: 5%;
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
 }

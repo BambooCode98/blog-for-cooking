@@ -1,5 +1,7 @@
-// import React, { useState } from 'react';
+import React, { useState } from 'react';
 import '../styles/navbar.css';
+import { Link, Outlet } from 'react-router-dom';
+
 
 export default function Navbar() {
 
@@ -13,19 +15,20 @@ export default function Navbar() {
       <div className='links'>
         <ul>
           <li>
-            <a href="" className='link l1'>Home</a>
+            <Link to="/" className='link l1'>Home</Link>
           </li>
           <li>
-            <a href="" className='link l2'>Articles</a>
+            <Link to="/about" className='link l2'>About</Link>
           </li>
           <li>
-            <a href="" className='link l3'>About</a>
+            <Link to="/articles" className='link l3'>Articles</Link>
           </li>
           <li>
-            <a href="" className='link last l4'>Contact</a>
+            <Link to="/contact" className='link last l4'>Contact</Link>
           </li>
         </ul>
       </div>
+      <Outlet />
     </div>
   );
 }

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
+import { Link, Outlet } from 'react-router-dom';
 import '../styles/middle.css';
 
 
 function ImageSelect(props) {
-  // const [images, setImage] = useState(require("../images/cinnamoroll.png"));
-  // let idnum = props.id;
-  if(props.article.id <= 2) {
+
+  if(props.article.author === "Katie") {
     return(
       <img
       src={ require("../images/cinnamoroll.png")}
@@ -13,7 +13,7 @@ function ImageSelect(props) {
       />
     )
     
-  } else if(props.article.id >= 3) {
+  } else if(props.article.author === "Ashlyn") {
     return(
       <img
       src={ require("../images/riddler.png") }
@@ -37,12 +37,12 @@ export default function MiddleArticles () {
     title: "DC-Riddler",
     id: 25,
   }, {
-    author: "Ashlyn2",
+    author: "Ashlyn",
     body: "texttexttextextextextextextextext",
     title: "DC-Riddler",
     id: 3,
   }, {
-    author: "Ashlyn4",
+    author: "Ashlyn",
     body: "texttexttextextextextextextextext",
     title: "DC-Riddler",
     id: 4,
@@ -61,29 +61,29 @@ export default function MiddleArticles () {
     body: "texttexttextextextextextextextextrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr",
     title: "DC-Riddler",
     id: 29,
-  }
+  }, {
+    author: "Katie",
+    body: "cooking time is fun",
+    title: "Boss Cooks",
+    id: 90
+  },
   ])
-  // const [images, setImage] = useState(require("../images/cinnamoroll.png"));
-
 
 
   return(
-    <div>
+    <>
       {articles.map( (article) => {
           return(
-            <div key={article.id} className="articleBlocks">
-              {/* <img
-              src={ images }
-              className='articleImage'
-              /> */}
-              < ImageSelect article={article}/>
-              <p className='articleTitle'>{article.title}</p>
-
+            <div>
+              <Link to={`article/${article.id}`} key={article.id} className="articleBlocks">
+                < ImageSelect article={article}/>
+                <p className='articleTitle'>{article.title}</p>
+              </Link>
             </div>
           );
         }
       )}
-    </div>
+    </>
   )
 }
 

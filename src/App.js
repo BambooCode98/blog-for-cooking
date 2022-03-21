@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import './styles/App.css';
+// import { Link } from 'react-router-dom';
 import Navbar from './components/navbar';
 import MiddleArticles from './components/middle';
 import RightContent from './components/right';
 import LeftAuthor from './components/left';
 import Footer from './components/footer';
+import './styles/App.css';
 
 export default function App() {
 

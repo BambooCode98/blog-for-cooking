@@ -21,15 +21,15 @@
 
   .links{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 50%;
   }
 
   .link{
-    padding: 5px;
+    padding-left: 0.8rem;
     /* margin: 25%; */
-    font-size: 2.5vw;
+    font-size: 2.3vw;
     text-decoration: none;
     color: white;
   }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import '../styles/left.css';
 
 export default function LeftAuthor () {
 

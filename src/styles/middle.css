@@ -11,18 +11,36 @@
 
 
 .articleBlocks{
-  border: #9e9e9e solid 5px;
+  border: #9e9e9e solid 4px;
   border-radius: 5px;
-  outline: 3px solid black;
+  outline: 2px solid black;
   display: flex;
   flex-direction: column;
   margin-bottom: 5%;
+  padding-top: 25px;
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 20vw;
   margin-left: 2%;
   transition: all 0.1s ease-in-out;
 }
+
+@media screen and (max-width: 430px) {
+  .articleBlocks{
+    border: #9e9e9e solid 5px;
+    border-radius: 5px;
+    /* outline: 3px solid black; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    padding-top: 25px;
+    position: relative;
+    width: 150px;
+    height: 20vw;
+    margin-left: 2%;
+    transition: all 0.1s ease-in-out;
+  }
+} 
 
 .articleBlocks:hover{
   transform: scale(1.01);

@@ -5,6 +5,38 @@
   width: 100%;
 }
 
+/* about page section begins*/
+
+.aboutStuff{
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  width: 100%;
+}
+
+.aboutMain{
+  display: flex;
+  width: 100%;
+  max-height: 100vh;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: column;
+  position: relative;
+}
+
+.aboutContent{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+
+/* about page section ends */
+
+
 .navStuff{
   display: flex;
   height: 5%;
@@ -16,7 +48,7 @@
 .everythingElse{
   display: flex;
   width: 100%;
-  height: 95%;
+  min-height: 100vh;
   justify-content: space-between;
   align-items: stretch;
   flex-direction: column;
@@ -27,7 +59,7 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
 }
 
 .left, .middle, .right{
@@ -39,7 +71,7 @@
   width: 10%;
   background-color: #ffb6c1;
   border-radius: 4px;
-  z-index: -5;
+  /* z-index: -5; */
 }
 
 .left{
@@ -57,8 +89,8 @@
 .middle{
   width: 60%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  /* row-gap: 2px; */
 }
 
 
